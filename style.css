@@ -1,0 +1,141 @@
+body {
+    font-family: "Poppins", sans-serif;
+    /* background-color: #e9f5fb;  */
+    background-color: rgb(84, 127, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #007bff; 
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+label {
+    font-weight: 600;
+    font-size: 18px;
+    color: #333;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #007bff; 
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #f0f8ff; 
+    color: #333;
+}
+
+select:focus,
+input:focus {
+    border-color: #0056b3; 
+    outline: none;
+    background-color: #ffffff; 
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; 
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+button:active {
+    background-color: #004494; 
+    transform: translateY(2px);
+}
+
+#result {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #004494; 
+    margin-top: 10px;
+}
+
+.error {
+    color: #dc3545; 
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+    .box {
+        padding: 20px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    label,
+    input,
+    select {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .box {
+        width: 350px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    button {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 769px) {
+    .box {
+        width: 400px;
+    }
+}
